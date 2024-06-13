@@ -43,11 +43,68 @@ modules:
         # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+        - app.devsuite.Ptyxis
+        - ca.andyholmes.Valent
+        - ca.desrt.dconf-editor
+        - com.discordapp.Discord
+        - com.github.marhkb.Pods
+        - com.github.tchx84.Flatseal
+        - com.google.Chrome
+        - com.mattjakeman.ExtensionManager
+        - com.ranfdev.Notify
+        - com.valvesoftware.Steam
+        - com.visualstudio.code
+        - com.vixalien.sticky
+        - com.yubico.yubioath
+        - de.haeckerfelix.Fragments
+        - de.schmidhuberj.Flare
+        - dev.serebit.Waycheck
+        - io.github.alainm23.planify
+        - io.github.fabrialberio.pinapp
+        - io.github.shiftey.Desktop
+        - io.gitlab.news_flash.NewsFlash
+        - io.podman_desktop.PodmanDesktop
+        - net.ankiweb.Anki
+        - net.nokyan.Resources
+        - org.gnome.baobab
+        - org.gnome.Calculator
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.clocks
+        - org.gnome.Connections
+        - org.gnome.Evince
+        - org.gnome.Extensions
+        - org.gnome.font-viewer
+        - org.gnome.Fractal
+        - org.gnome.Loupe
+        - org.gnome.Maps
+        - org.gnome.NautilusPreviewer
+        - org.gnome.Ptyxis.Devel
+        - org.gnome.Snapshot
+        - org.gnome.TextEditor
+        - org.gnome.Todo
+        - org.gnome.Weather
+        - org.gnome.World.PikaBackup
+        - org.libreoffice.LibreOffice
+        - org.mozilla.firefox
+        - org.standardnotes.standardnotes
+        - us.zoom.Zoom
+
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
       remove:
       # - org.gnome.eog
+
+  - type: fonts
+    fonts:
+    nerd-fonts:
+      - FiraCode # don't add spaces or "Nerd Font" suffix.
+      - Hack
+      - SourceCodePro
+      - Terminus
+      - JetBrainsMono
+      - NerdFontsSymbolsOnly
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
