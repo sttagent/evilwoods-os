@@ -11,20 +11,28 @@ After setup, it is recommended you update this README to describe your custom im
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- First rebase to the unsigned image, to get the proper signing keys and policies
+  installed:
+
+  ```bash
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/sttagent/evilwoods-os:latest
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
-  ```
+
 - Reboot to complete the rebase:
-  ```
+
+  ```bash
   systemctl reboot
   ```
+
 - Then rebase to the signed image, like so:
+
+  ```bash
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sttagent/evilwoods-os:latest
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
-  ```
+
 - Reboot again to complete the installation
-  ```
+
+  ```bash
   systemctl reboot
   ```
 
@@ -32,7 +40,8 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ## ISO
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso).
+These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 
