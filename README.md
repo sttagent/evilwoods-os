@@ -1,4 +1,4 @@
-# Evilwoods-os &nbsp; [![build-ublue](https://github.com/sttagent/evilwoods-os/actions/workflows/build.yml/badge.svg)](https://github.com/sttagent/evilwoods-os/actions/workflows/build.yml)
+# Evilwoods-os &nbsp; [![evilwoods-os](https://github.com/sttagent/evilwoods-os/actions/workflows/build.yml/badge.svg)](https://github.com/sttagent/evilwoods-os/actions/workflows/build.yml)
 
 Personal OS image using blue-build template repo. See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
